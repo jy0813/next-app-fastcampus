@@ -28,4 +28,8 @@ $npm run deploy
 
 ## Test
 
-- 유닛 태스트
+- Jest
+
+```
+$ npm run test
+```
