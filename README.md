@@ -8,7 +8,7 @@
 - Next.js (13v app router)
 - TypeScript
 - EsLint
-- Babel 설정
+- Swc
 
 ## Docker
 
