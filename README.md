@@ -8,7 +8,8 @@
 - Next.js (13v app router)
 - TypeScript
 - EsLint
-- Swc
+- SWC
+- MSW
 
 ## Docker
 

@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:production": "docker run -p 3000:3000 fastcampus",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "docker": "docker build -t fastcampus ."
   },
   "dependencies": {
     "next": "^13.5.3",
