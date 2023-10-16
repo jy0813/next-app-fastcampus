@@ -2,29 +2,29 @@ import { render, screen } from "@testing-library/react";
 import Home from "@/app/page";
 
 describe("Home", () => {
-  it("should have Docs text", () => {
-    render(<Home />);
+  it("메뉴가 렌더링 되어야한다", () => {
+    const { getByRole } = render(<Home />);
 
-    const myElem = screen.getByText("Docs");
-
-    expect(myElem).toBeInTheDocument();
-  });
-
-  it('should contain the text "information"', () => {
-    render(<Home />);
-
-    const myElem = screen.getByText(/information/i);
-
-    expect(myElem).toBeInTheDocument();
-  });
-
-  it("should have a heading", () => {
-    render(<Home />);
-
-    const myElem = screen.getByRole("heading", {
-      name: "Learn",
+    const menu = getByRole("navigation", {
+      name: "fastcampus",
     });
 
-    expect(myElem).toBeInTheDocument();
+    expect(menu).toBeInTheDocument();
+  });
+
+  it("배너가 렌더링 되어야한다", () => {
+    const { getByRole } = render(<Home />);
+
+    const banner = getByRole("banner");
+
+    expect(banner).toBeInTheDocument();
+  });
+
+  it("강의 목록이 렌더링 되어야한다", () => {
+    const { getByTitle } = render(<Home />);
+
+    const lectureList = getByTitle("lectureList");
+
+    expect(lectureList).toBeInTheDocument();
   });
 });
