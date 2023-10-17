@@ -1,5 +1,4 @@
 import Banner from "@/components/Banner";
-import LectureList from "@/components/lecture/LectureList";
 import Menu from "@/components/Menu";
 
 export default function Home() {

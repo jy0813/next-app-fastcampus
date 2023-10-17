@@ -26,6 +26,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "encoding": "^0.1.13",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "eslint-plugin-jest-dom": "^5.1.0",
@@ -38,5 +39,8 @@
     "ts-jest": "^29.1.1",
     "typescript": "latest",
     "whatwg-fetch": "^3.6.19"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
